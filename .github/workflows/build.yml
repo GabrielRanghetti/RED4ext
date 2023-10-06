@@ -17,12 +17,10 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Checkout submodule
-        uses: actions/checkout@v3
-        with:
-          repository: GabrielRanghetti/RED4ext.SDK
-          path: deps
-          ref: 'master'
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
 
       - name: Create environment variables
         run: |
