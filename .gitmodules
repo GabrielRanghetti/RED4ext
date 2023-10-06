@@ -4,6 +4,7 @@
 [submodule "deps/red4ext.sdk"]
 	path = deps/red4ext.sdk
 	url = https://github.com/GabrielRanghetti/RED4ext.SDK
+	branch = master
 [submodule "deps/detours"]
 	path = deps/detours
 	url = https://github.com/microsoft/Detours.git
